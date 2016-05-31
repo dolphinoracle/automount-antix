@@ -1,0 +1,110 @@
+#!/bin/bash
+
+#automount-configuration script for auto-mount in desktop-session startup file
+
+
+# translations stuff
+TEXTDOMAINDIR=/usr/share/locale 
+TEXTDOMAIN=automount-config
+
+APPLY=$"Apply"
+CLOSE=$"Close"
+TITLE=$"Automount Configuration"
+USBDEVICES=$"usb devices"
+OPTICALDEVICES=$"optical discs"
+LABEL1=$"Automount External Devices"
+LABEL2=$"Open Default File Manager on Mount"
+
+
+get_selections()
+{
+AUTOMOUNT=$(grep automount= /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+FM_USB=$(grep usb /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+FM_OPTICAL=$(grep optical /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+
+#devmon --exec-on-drive "desktop-defaults-run -fm %d" --exec-on-disc "desktop-defaults-run -fm %d" & 
+
+#set up selection gui
+
+selections=$(yad --form --title="$TITLE" --center --window-icon=drive-removable-media --button="$APPLY"!emblem-default!:0 --button="$CLOSE"!process-stop!:1\
+	--field="$LABEL1":CHK "$AUTOMOUNT"\
+	--field="":LBL ""\
+	--field="$LABEL2":LBL ""\
+	--field="	$USBDEVICES":CHK "$FM_USB"\
+	--field="	$OPTICALDEVICES":CHK "$FM_OPTICAL")
+}
+
+actions()
+{
+
+#capture the exit code from the selection dialog
+status2=$?
+
+#echo $status2
+
+#decide what to do, based on exit code
+case $status2 in
+
+	0) adjust_settings
+		   ;;
+	1) quit
+		   ;;
+esac
+}
+
+adjust_settings()
+{
+pkill -x -u $USER devmon
+echo $selections
+AUTOMOUNT=$(echo $selections|cut -d '|' -f1)
+FM_USB=$(echo $selections|cut -d '|' -f4)
+FM_OPTICAL=$(echo $selections|cut -d '|' -f5)
+
+echo automount is :$AUTOMOUNT
+echo FM_USB is : $FM_USB
+echo FM_OPTICAL is: $FM_OPTICAL
+
+if [ "$AUTOMOUNT" = "TRUE" ]; then
+sed -i s/automount=.*/automount=TRUE/ /home/$USER/.desktop-session/automount.conf
+else
+sed -i s/automount=.*/automount=FALSE/ /home/$USER/.desktop-session/automount.conf
+fi
+
+if [ "$FM_USB" = "TRUE" ]; then
+sed -i s/fm_usb=.*/fm_usb=TRUE/ /home/$USER/.desktop-session/automount.conf
+else
+sed -i s/fm_usb=.*/fm_usb=FALSE/ /home/$USER/.desktop-session/automount.conf
+fi
+
+if [ "$FM_OPTICAL" = "TRUE" ]; then
+sed -i s/fm_optical=.*/fm_optical=TRUE/ /home/$USER/.desktop-session/automount.conf
+else
+sed -i s/fm_optical=.*/fm_optical=FALSE/ /home/$USER/.desktop-session/automount.conf
+fi
+bash -c automount-antix &
+actionstatus=0
+}
+
+quit()
+{
+	actionstatus=1
+}
+
+##start gui and run actions
+## this is actually gets things started.  everything up to now is definition of functions and variables
+
+# set initial status
+status=0
+
+while [ $status = "0" ]; do
+
+	#start the parent dialog
+	get_selections
+	
+	#once selection is made, use action function to decide what to do
+	actions
+
+	#app status is the same as whatever the last actionstatus is.  If 0, the while loop starts everything over
+	status=$actionstatus
+	
+done

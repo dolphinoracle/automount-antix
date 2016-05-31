@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#automount script for desktop-session startup file
+#also called by automount-config when enabling automounting
+#
+
+automount()
+{
+AUTOMOUNT=$(grep automount= /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+FM_USB=$(grep usb /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+FM_OPTICAL=$(grep optical /home/$USER/.desktop-session/automount.conf|cut -d= -f2)
+
+echo automount is :$AUTOMOUNT
+echo FM_USB is : $FM_USB
+echo FM_OPTICAL is: $FM_OPTICAL
+
+if [ "$FM_USB" = "TRUE" ]; then
+OPTION_USB='--exec-on-drive "desktop-defaults-run -fm %d"'
+fi
+
+if [ "$FM_OPTICAL" = "TRUE" ]; then
+OPTION_OPTICAL='--exec-on-disc "desktop-defaults-run -fm %d"'
+fi
+
+if [ "$AUTOMOUNT" = "TRUE" ]; then
+COMMAND="devmon $OPTION_USB $OPTION_OPTICAL >/dev/null &"
+bash -c "$COMMAND"
+fi
+}
+
+#kill any previous devmon running
+pkill -x -u $USER devmon
+
+automount
+
+exit 0
+
+ 
