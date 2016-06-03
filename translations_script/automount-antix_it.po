@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Pierluigi Mario <pierluigimariomail@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: antix-development\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-31 08:27-0400\n"
+"PO-Revision-Date: 2016-06-02 08:21+0000\n"
+"Last-Translator: Pierluigi Mario <pierluigimariomail@gmail.com>\n"
+"Language-Team: Italian (http://www.transifex.com/anticapitalista/antix-development/language/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: automount-config:10
+msgid "Apply"
+msgstr "Applica"
+
+#: automount-config:11
+msgid "Close"
+msgstr "Chiudi"
+
+#: automount-config:12
+msgid "Automount Configuration"
+msgstr "Configurazione Automount"
+
+#: automount-config:13
+msgid "usb devices"
+msgstr "dispositivi usb"
+
+#: automount-config:14
+msgid "optical discs"
+msgstr "dischi ottici"
+
+#: automount-config:15
+msgid "Automount External Devices"
+msgstr "Automount di Dispositivi Esterni"
+
+#: automount-config:16
+msgid "Open Default File Manager on Mount"
+msgstr "Apri il File Manager di Default al Montaggio"
