@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-31 08:27-0400\n"
-"PO-Revision-Date: 2016-06-02 00:22+0000\n"
+"POT-Creation-Date: 2016-06-03 14:37-0400\n"
+"PO-Revision-Date: 2016-06-03 20:27+0000\n"
 "Last-Translator: anticapitalista <antiX@operamail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/anticapitalista/antix-development/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -18,30 +18,46 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: automount-config:10
+#: automount-config:11
 msgid "Apply"
 msgstr "Εφαρμογή"
 
-#: automount-config:11
+#: automount-config:12
 msgid "Close"
 msgstr "Κλείσιμο"
 
-#: automount-config:12
+#: automount-config:13
 msgid "Automount Configuration"
 msgstr "Διαμόρφωση Automount"
 
-#: automount-config:13
+#: automount-config:14
 msgid "usb devices"
 msgstr "συσκευές USB"
 
-#: automount-config:14
+#: automount-config:15
 msgid "optical discs"
 msgstr "οπτικούς δίσκους"
 
-#: automount-config:15
+#: automount-config:16
 msgid "Automount External Devices"
 msgstr "Automount εξωτερικές συσκευές"
 
-#: automount-config:16
+#: automount-config:17
 msgid "Open Default File Manager on Mount"
 msgstr "Ανοίξτε το προεπιλεγμένος διαχειριστής αρχείων σε Mount"
+
+#: automount-config:18
+msgid "DVD in Video Player"
+msgstr "Στο DVD Video Player"
+
+#: automount-config:19
+msgid "Audio Discs in Music Player"
+msgstr "Ήχου Δίσκοι σε Music Player"
+
+#: automount-config:20
+msgid "DVD Command"
+msgstr "Εντολή DVD "
+
+#: automount-config:21
+msgid "Audio Disc Command"
+msgstr "Εντολή Audio Disc"

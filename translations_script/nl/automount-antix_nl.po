@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-31 08:27-0400\n"
-"PO-Revision-Date: 2016-05-31 17:38+0000\n"
+"POT-Creation-Date: 2016-06-03 14:37-0400\n"
+"PO-Revision-Date: 2016-06-04 08:40+0000\n"
 "Last-Translator: Eadwine Rose\n"
 "Language-Team: Dutch (http://www.transifex.com/anticapitalista/antix-development/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -18,30 +18,46 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: automount-config:10
+#: automount-config:11
 msgid "Apply"
 msgstr "Toepassen"
 
-#: automount-config:11
+#: automount-config:12
 msgid "Close"
 msgstr "Sluiten"
 
-#: automount-config:12
+#: automount-config:13
 msgid "Automount Configuration"
 msgstr "Automatisch Aankoppelen Configuratie"
 
-#: automount-config:13
+#: automount-config:14
 msgid "usb devices"
 msgstr "usb apparaten"
 
-#: automount-config:14
+#: automount-config:15
 msgid "optical discs"
 msgstr "optische schijven"
 
-#: automount-config:15
+#: automount-config:16
 msgid "Automount External Devices"
 msgstr "Automatisch Externe Apparaten Aankoppelen"
 
-#: automount-config:16
+#: automount-config:17
 msgid "Open Default File Manager on Mount"
 msgstr "Open Standaard Bestandsmanager bij Aankoppelen"
+
+#: automount-config:18
+msgid "DVD in Video Player"
+msgstr "DVD in Video Speler"
+
+#: automount-config:19
+msgid "Audio Discs in Music Player"
+msgstr "Audio Schijf in Muziekspeler"
+
+#: automount-config:20
+msgid "DVD Command"
+msgstr "DVD Commando"
+
+#: automount-config:21
+msgid "Audio Disc Command"
+msgstr "Audio Schijf Commando"

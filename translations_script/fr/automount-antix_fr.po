@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-31 08:27-0400\n"
-"PO-Revision-Date: 2016-05-31 13:30+0000\n"
+"POT-Creation-Date: 2016-06-03 14:37-0400\n"
+"PO-Revision-Date: 2016-06-03 21:19+0000\n"
 "Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
 "Language-Team: French (http://www.transifex.com/anticapitalista/antix-development/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -18,30 +18,46 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: automount-config:10
+#: automount-config:11
 msgid "Apply"
 msgstr "Appliquer"
 
-#: automount-config:11
+#: automount-config:12
 msgid "Close"
 msgstr "Fermer"
 
-#: automount-config:12
+#: automount-config:13
 msgid "Automount Configuration"
 msgstr "Configuration du montage automatique"
 
-#: automount-config:13
+#: automount-config:14
 msgid "usb devices"
 msgstr "les périphériques usb"
 
-#: automount-config:14
+#: automount-config:15
 msgid "optical discs"
 msgstr "les disques optiques"
 
-#: automount-config:15
+#: automount-config:16
 msgid "Automount External Devices"
 msgstr "Montage automatique des périphériques externes"
 
-#: automount-config:16
+#: automount-config:17
 msgid "Open Default File Manager on Mount"
 msgstr "Lancer le gestionnaire de fichiers par défaut à l'occasion de montage"
+
+#: automount-config:18
+msgid "DVD in Video Player"
+msgstr "DVD au lecteur vidéo"
+
+#: automount-config:19
+msgid "Audio Discs in Music Player"
+msgstr "Disques audio au lecteur musique"
+
+#: automount-config:20
+msgid "DVD Command"
+msgstr "Commande DVD"
+
+#: automount-config:21
+msgid "Audio Disc Command"
+msgstr "Commande disque audio"

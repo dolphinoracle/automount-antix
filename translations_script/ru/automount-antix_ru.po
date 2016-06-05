@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-31 08:27-0400\n"
-"PO-Revision-Date: 2016-05-31 13:28+0000\n"
+"POT-Creation-Date: 2016-06-03 14:37-0400\n"
+"PO-Revision-Date: 2016-06-04 01:03+0000\n"
 "Last-Translator: Вячеслав Волошин <vol_vel@mail.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/anticapitalista/antix-development/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -18,30 +18,46 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: automount-config:10
+#: automount-config:11
 msgid "Apply"
 msgstr "Применить"
 
-#: automount-config:11
+#: automount-config:12
 msgid "Close"
 msgstr "Закрыть"
 
-#: automount-config:12
+#: automount-config:13
 msgid "Automount Configuration"
 msgstr "Настройка автомонтирования"
 
-#: automount-config:13
+#: automount-config:14
 msgid "usb devices"
 msgstr "usb устройства"
 
-#: automount-config:14
+#: automount-config:15
 msgid "optical discs"
 msgstr "оптические диски"
 
-#: automount-config:15
+#: automount-config:16
 msgid "Automount External Devices"
 msgstr "Автомонтирование внешних устройств"
 
-#: automount-config:16
+#: automount-config:17
 msgid "Open Default File Manager on Mount"
 msgstr "Открыть смонтированное устройство в файловом менеджере по умолчанию"
+
+#: automount-config:18
+msgid "DVD in Video Player"
+msgstr "DVD в проигрывателе видео"
+
+#: automount-config:19
+msgid "Audio Discs in Music Player"
+msgstr "Аудио-диски в музыкальном проигрывателе"
+
+#: automount-config:20
+msgid "DVD Command"
+msgstr "Команда для DVD"
+
+#: automount-config:21
+msgid "Audio Disc Command"
+msgstr "Команда для аудио-диска"
