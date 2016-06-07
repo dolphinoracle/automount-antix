@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-03 14:37-0400\n"
-"PO-Revision-Date: 2016-06-03 18:41+0000\n"
-"Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
+"PO-Revision-Date: 2016-06-06 08:13+0000\n"
+"Last-Translator: Eduard Selma <selma@tinet.cat>\n"
 "Language-Team: Catalan (http://www.transifex.com/anticapitalista/antix-development/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgstr "Configuració d'automuntatge "
 
 #: automount-config:14
 msgid "usb devices"
-msgstr "D\ndispositius USB "
+msgstr "dispositius USB "
 
 #: automount-config:15
 msgid "optical discs"
@@ -48,16 +48,16 @@ msgstr "Obre el gestor de fitxers per omissió en muntar "
 
 #: automount-config:18
 msgid "DVD in Video Player"
-msgstr ""
+msgstr "DVD al Reproductor de Vídeo"
 
 #: automount-config:19
 msgid "Audio Discs in Music Player"
-msgstr ""
+msgstr "Discos d'àudio al Reproductor de Música "
 
 #: automount-config:20
 msgid "DVD Command"
-msgstr ""
+msgstr "Ordre del DVD"
 
 #: automount-config:21
 msgid "Audio Disc Command"
-msgstr ""
+msgstr "Ordre del Disc d'Àudio "
