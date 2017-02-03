@@ -165,8 +165,10 @@ echo dvd_command=$DVD_COMMAND >>/home/$USER/.desktop-session/automount.conf
 sed -i /audio_command=.*/d /home/$USER/.desktop-session/automount.conf
 echo audio_command=$AUDIO_COMMAND >>/home/$USER/.desktop-session/automount.conf
 
-
-#restart desktop-session which will also restart conky
+#kill conky if running, then restart desktop-session which will also restart conky
+if [ $(pidof conky) ]; then
+    pkill conky
+fi
 /usr/local/lib/desktop-session/desktop-session-restart &
 #let things settle down before bringing back the selection dialog
 sleep 5 
